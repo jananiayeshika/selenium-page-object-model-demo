@@ -50,4 +50,4 @@ jobs:
         google-chrome --version
 
     - name: Execute test
-      run: mvn clean test Pheadless-chrome,qa,smoke-test
+      run: mvn clean test -Pheadless-chrome,qa,smoke-test
