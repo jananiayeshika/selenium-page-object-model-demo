@@ -41,7 +41,7 @@ jobs:
     - name: Check build environment
       run: |
         echo "Java version:"
-        java-version
+        java -version
 
         echo "Maven version"
         mvn -version
