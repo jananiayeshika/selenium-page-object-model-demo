@@ -54,7 +54,7 @@ jobs:
 
     - name: Archive test reports
       if: always()
-      uses: action/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
          name: test-reports
          path: reports
