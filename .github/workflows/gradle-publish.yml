@@ -51,3 +51,10 @@ jobs:
 
     - name: Execute test
       run: mvn clean test -Pheadless-chrome,qa,smoke-test
+
+    - name: Archive test reports
+      if: always()
+      uses: action/upload-artifact@v3
+      with:
+         name: test-reports
+         path: reports
